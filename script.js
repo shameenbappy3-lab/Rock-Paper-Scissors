@@ -1,0 +1,6 @@
+function getComputerChoice(){
+    let randomNumber = Math.floor(Math.random() * 10);
+    if(randomNumber <= 3) return "Rock!";
+    if(randomNumber <= 6) return "Paper!";
+    if(randomNumber <= 9) return "Scissors!";
+}
