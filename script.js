@@ -29,3 +29,19 @@ console.log(getComputerChoice());
 console.log(getComputerChoice());
 console.log(getComputerChoice());
 console.log(getComputerChoice());
+
+function getHumanChoice(){
+    let userChoice = prompt("write rock,paper or scissors to choose!","r").toUpperCase();
+    switch(userChoice){
+        case "ROCK":
+            return "Rock!";
+            break;
+        case "PAPER":
+            return "Paper!";
+            break;
+        case "SCISSORS":
+            return "Scissors";
+            break;
+    }
+}
+console.log(getHumanChoice());
