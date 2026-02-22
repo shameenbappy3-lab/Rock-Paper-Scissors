@@ -102,3 +102,58 @@ let paper = document.createElement('button');
 paper.textContent = "Paper";
 document.body.appendChild(paper);
 
+let whoWon;
+let div;
+
+
+rock.addEventListener('click',function(){
+    whoWon = playRound("Rock!",getComputerChoice());
+    div = document.createElement("div");
+    div.textContent = `${whoWon} `;
+    div.textContent += `Computer Score ${computerScore} `;
+    div.textContent += `Human Score ${humanScore} `
+    div.textContent += `Draw ${draw} `
+    if(humanScore == 5 || computerScore == 5){
+        div.textContent += `Game Over! Final Score Computer: ${computerScore} Human: ${humanScore} Draw: ${draw}`
+        humanScore = 0;
+        computerScore = 0;
+        draw = 0;
+    }
+    document.body.appendChild(div);
+    
+});
+
+scissor.addEventListener('click',function(){
+    whoWon = playRound("Scissors!",getComputerChoice());
+    div = document.createElement("div");
+    div.textContent = `${whoWon} `;
+    div.textContent += `Computer Score ${computerScore} `;
+    div.textContent += `Human Score ${humanScore} `
+    div.textContent += `Draw ${draw} `
+    if(humanScore == 5 || computerScore == 5){
+        div.textContent += `Game Over! Final Score Computer: ${computerScore} Human: ${humanScore} Draw: ${draw}`
+        humanScore = 0;
+        computerScore = 0;
+        draw = 0;
+    }
+    document.body.appendChild(div);
+
+});
+
+paper.addEventListener('click',function(){
+    whoWon = playRound("Paper!",getComputerChoice());
+    div = document.createElement("div");
+    div.textContent = `${whoWon} `;
+    div.textContent += `Computer Score ${computerScore} `;
+    div.textContent += `Human Score ${humanScore} `
+    div.textContent += `Draw ${draw} `
+    if(humanScore == 5 || computerScore == 5){
+        div.textContent += `Game Over! Final Score Computer: ${computerScore} Human: ${humanScore} Draw: ${draw}`
+        humanScore = 0;
+        computerScore = 0;
+        draw = 0;
+    }
+    document.body.appendChild(div);
+
+});
+
