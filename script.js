@@ -73,19 +73,32 @@ function playRound(humanChoice,computerChoice){
 
 
 
-function playGame(){
-    for(let i = 0; i < 5 ; i++){
-        let humanSelection = getHumanChoice();
-        let computerSelection = getComputerChoice();
-        playRound(humanSelection,computerSelection);
-    }
-    if(humanScore > computerScore){
-        console.log(`You: ${humanScore} Computer: ${computerScore} Draw: ${draw}`);
-        return console.log("You Won!!!");
-    }else{
-        console.log(`You: ${humanScore} Computer: ${computerScore} Draw: ${draw}`);
-        return console.log("You Lose!")
-    };
-}
+// function playGame(){
+//     for(let i = 0; i < 5 ; i++){
+//         let humanSelection = getHumanChoice();
+//         let computerSelection = getComputerChoice();
+//         playRound(humanSelection,computerSelection);
+//     }
+//     if(humanScore > computerScore){
+//         console.log(`You: ${humanScore} Computer: ${computerScore} Draw: ${draw}`);
+//         return console.log("You Won!!!");
+//     }else{
+//         console.log(`You: ${humanScore} Computer: ${computerScore} Draw: ${draw}`);
+//         return console.log("You Lose!")
+//     };
+// }
 
-playGame();
+// playGame();
+
+let rock = document.createElement('button');
+rock.textContent = "Rock";
+document.body.appendChild(rock);
+
+let scissor = document.createElement('button');
+scissor.textContent = 'Scissor';
+document.body.appendChild(scissor);
+
+let paper = document.createElement('button');
+paper.textContent = "Paper";
+document.body.appendChild(paper);
+
